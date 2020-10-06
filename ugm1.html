@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="iconUgm.png">
+        <title>Universitas Gadjah Mada</title>
+        <style>
+            /*menu1*/
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .menu1{
+                border: 1px solid;
+                height: 30px;
+                margin-top: 10px;
+                padding-left: 740px;
+                padding-top: 15px;
+                background-color: #0f3057;
+            }
+            .menu1 ul li{
+                list-style-type: none;
+            }
+            /*.menu1 ul ul{
+                position: absolute;
+                border: 1px solid;
+                margin-top: 32px;
+                margin-left: 326px;
+                padding-left: 0px;
+                padding: 5px;
+                display: none;
+                width: 150px;
+            }
+            .menu1 ul li:hover ul{
+                display: block;
+            }
+            .menu1 img{
+                margin-right: 5px;
+            }
+            .menu1 .english:hover{
+                color: yellow;
+            }
+            .menu1 .border{
+                border: 1px solid;
+                padding: 5px;
+                margin-top: -10px;
+                width: 150px;
+                height: 30px;
+            }*/
+            .menu1 a{
+                text-decoration: none;
+                color:white;
+                float: left;
+                margin-right: 10px;
+                font-size: 12px;
+            }
+            .menu1 a:hover{
+                color: 	#CCCC00;
+            }
+            /* logo no fixed*/
+            .logo1{
+                top: 0.25rem;
+                position:sticky;
+                border: 1px solid;
+                background-color: #00587a;
+                margin-left: 0px;
+                margin-top: -5px;
+                width: 300px;
+                height: 100px;
+                padding-left: 90px;
+            }
+            .logo1 img{
+                margin-top: 5px;
+            }
+            .logo1 h2{
+                border: 1px none;
+                color: white;
+                font-family: 'Playfair Display', serif;
+                font-size: 15px;
+                margin-top: -60px;
+                margin-left: 40px;
+                margin-right: 300px;
+                text-align: center;
+                height: 50px;
+                width: 200px;
+            }
+            .logo1 a{
+                text-decoration:none;
+            }
+
+            .logo2{
+                margin-top: -150px;
+                position: absolute;
+                border: 1px solid;
+                border-color: #0f3057;
+                background-color: #0f3057;
+                margin-left: 90px;
+                width: 200px;
+                height: 160px;
+                text-align: center;
+            }
+            .logo2 img{
+                margin-left: 10px;
+                margin-top: 10px;
+                border: 1px none;
+                background-color: #0f3057;
+            }
+            .logo2 h2{
+                border: 1px none;
+                height: 50px;
+                width: 200px;
+                margin-left: 0px;
+                margin-top: 5px;
+                margin-right: 520px;
+                text-align: center;
+            }
+            .logo2 a{
+                color: white;
+                text-decoration: none;
+                font-family: 'Playfair Display', serif;
+                font-size: 10px;
+            }
+            /* MENU 2*/
+            .menu2{
+                top: 0.25rem;
+                position: sticky;
+                margin-top: -102px;
+                border: 1px solid;
+                border-color: #00587a;
+                height: 100px;
+                margin-left: 300px;
+                background-color: #00587a;
+                padding-left: 30px;
+            }
+            .menu2 ul li{
+                list-style-type: none;
+            }
+            .menu2 a{
+                text-decoration: none;
+                color: white;
+                float: left;
+                margin-right: 25px;
+                border: 3px solid;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                height: 40px;
+                font-size: 10px;
+                margin-top: 50px;
+            }
+            .menu2 .p1{
+                color:  	#CCCC00;
+            }
+            .menu2 a:hover{
+                color:  	#CCCC00;
+                border-bottom: 3px solid  	#CCCC00;
+            }
+
+            /* INPUT */
+            .input{
+                top: 2.30rem;
+                position: sticky;
+                margin-top: -60px;
+                margin-left: 1020px;
+                
+            }
+            .input input{
+                height: 35px;
+                width: 180px;
+
+            }
+            .input img{
+                margin-left: -40px;
+            }
+            /* BAHASA */
+            .bahasa{
+                margin-top: -110px;
+                margin-right: 400px;
+                margin-left: 1060px;
+            }
+            .bahasa ul li{
+                list-style-type: none;
+            
+            }
+            .bahasa ul ul{
+                display: none;
+                position: absolute;
+                border: 1px solid;
+                border-color: #132743;
+                background-color: #132743;
+                margin-top: 30px;
+                height: 30px;
+                width: 150px;
+                padding-left: 10px;
+            }
+            .bahasa ul li:hover ul{
+                display: block;
+                
+            }
+            .bahasa .english:hover{
+                color: yellow;
+            }
+            .bahasa .border:hover{
+                background-color: #132743;
+            }
+            .bahasa .border{
+                border: 2px solid;
+                border-top: none;
+                border-bottom: none;
+                border-right: none;
+                position: absolute;
+                width: 150px;
+                height: 30px;
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+            .bahasa a{
+                color: white;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            .bahasa img{
+                margin-right: 5px;
+            }
+            /*video*/
+            .contentVideo{
+                margin-left: 400px;
+                position: absolute;
+                margin-top: -600px;
+            
+                text-align: center;
+            }
+            .contentVideo h1{
+                color: white;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu1">
+            <ul>
+                <li><a title="Berita"href="">Berita</a></li>
+                <li><a title="Arsip Berita"href="">Arsip Berita</a></li>
+                <li><a title="Simaster"href="">Simaster</a></li>
+                <li><a title="Webmail"href="">Webmail</a></li>
+                <li><a title="Direktory"href="">Direktory</a></li>
+            </ul>
+        </div>
+        <div class="logo1">
+            <a href="ugm1.html"><img src="logougm.png" width="80px" height="80px"></a>
+            <a href="ugm1.html"><h2>UNIVERSITAS<br>GADJAH MADA</h2></a>
+        </div>
+        <div class="logo2">
+            <a href="ugm1.html"><img src="logougm.png" width="70px" height="70px"></a>
+            <a href="ugm1.html"><h2>UNIVERSITAS<br>GADJAH MADA</h2></a>
+        </div>
+        <div class="menu2">
+            <ul>
+                <li><a href="">TENTANG UGM</a></li>
+                <li><a href="">PENDIDIKAN</a></li>
+                <li><a href="">MAHASISWA</a></li>
+                <li><a href="">PENELITIAN</a></li>
+                <li><a href="">PENGABDIAN</a></li>
+                <li><a class="p1" href="">PENDAFTARAN</a></li>
+            </ul>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Search...">
+            <img src="iconSearch.png" width="20px" height="20px">
+        </div>
+        <div class="bahasa">
+            <ul>
+            <li><a class="border" href=""><img src="bendera3.jpg" width="20px" height="15px">Indonesia</a>
+                <ul>
+                    <li><a class="english"href=""><img src="bendera2.svg" width="20px" height="20px">English</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="video">
+            <video width="1300px"controls loop>
+                <source src="videoUGM.webm" type="video/webm">
+            </video>
+        <div class="contentVideo">
+            <img src="logougm.png" width="180px" height="180px">
+            <h1>UNIVERSITAS GADJAH MADA</h1>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br> <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br> <br>
+        <br>
+
+        <br> <br>
+        <br>
+
+        <br> <br>
+        <br>
+<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br> <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br> <br>
+        <br>
+
+        <br> <br>
+        <br>
+
+        <br> <br>
+        <br>
+
+    </body>
+</html>
